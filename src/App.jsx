@@ -1,26 +1,23 @@
 import "./App.css";
 import { CircleList, CircleView } from "./App.styles.jsx";
 import HomeIcon from "./components/HomeIcon";
+import settings from "../public/icons/gear-solid.svg";
 
 function App() {
-  const getCurrTime = () => {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    return;
-  };
-
   return (
     <>
       <div className="extensionContainer">
         <header className="header">
           <h1 className="h1">Z³-Wellness</h1>
+          <img src={settings} alt="" className="settingsIcon" />
         </header>
 
         <div className="dashboard"></div>
 
-        <button className="btn">GOING TO SLEEP</button>
+        <div className="btnContainer">
+          <button className="btn">GOING TO SLEEP</button>
+          <button className="btn">GOING TO SLEEP</button>
+        </div>
 
         {/* <div className="logBtnContainer">
           <div className="logBtn">

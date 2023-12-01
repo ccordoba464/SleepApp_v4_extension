@@ -5,13 +5,14 @@
   height: 520px;
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 .header {
   display: flex;
-  justify-content: flex-start;
-  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
 }
 
 .h1 {
@@ -20,19 +21,28 @@
   color: #337ab7;
 }
 
+.settingsIcon {
+  color: #337ab7;
+}
+
 .dashboard {
   background-color: rgba(83, 139, 189, 0.318);
   /* background-color: rgb(177, 156, 220); */
   height: 200px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .btn {
-  width: 200px;
+  width: 180px;
   background: #337ab7;
   border: 2px solid #337ab7;
-  box-shadow: 3px 5px #00000030;
   border-radius: 100px;
   color: #ffffff !important;
   font-size: 12px;
@@ -41,7 +51,6 @@
   text-transform: uppercase;
   padding: 10px 0;
   margin-bottom: 12px !important;
-  transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 
