@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Z3-Wellness Extension",
+  "description": "Log wellness data efficiently with Z3-Wellness.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "/assets/index-*.js"
+  }
+}

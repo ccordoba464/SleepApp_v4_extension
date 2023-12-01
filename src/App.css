@@ -1,0 +1,86 @@
+.extensionContainer {
+  /* background: linear-gradient(#1f9ce490 0%, #7339ab90 100%); */
+  background-color: white;
+  width: 380px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0;
+}
+
+.h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.dashboard {
+  background-color: rgba(83, 139, 189, 0.318);
+  /* background-color: rgb(177, 156, 220); */
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 200px;
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  box-shadow: 3px 5px #00000030;
+  border-radius: 100px;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-bottom: 12px !important;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.h2 {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.logBtnContainer {
+  display: flex;
+  gap: 38px;
+}
+
+.logBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="datetime-local"] {
+  width: 200px;
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  box-shadow: 5px 7px #00000030;
+  border-radius: 100px;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-bottom: 12px !important;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  /* More styles here */
+}

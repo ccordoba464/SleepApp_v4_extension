@@ -1,0 +1,298 @@
+:root {
+  --iconColor: linear-gradient(180deg, #1f9ce4 0%, #625ad8 40%, #7339ab 100%);
+  /*--iconColor: white;*/
+  /*--iconsize: 20vh;*/
+  --offsetDeg: 27deg;
+}
+#homepage {
+  background: linear-gradient(180deg, #ffffff 0%, #625ad890 40%, #7339ab90 100%),
+    url("/public/images/dawn.jpg") no-repeat center center fixed;
+  /*background: #141629;*/
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+#homepage::-webkit-scrollbar {
+  width: 0;
+  overflow: hidden;
+  -ms-overflow-style: none;
+}
+.dot_h {
+  /*height: var(--iconsize);*/
+  /*width: var(--iconsize);*/
+  background: var(--iconColor);
+  font-size: 15px !important;
+  border-radius: 50%;
+  display: inline-block;
+  /*border: 7px solid white;*/
+}
+
+.iconImages_h {
+  /*opacity: 0.45;*/
+  height: 70%;
+  width: 65%;
+  margin: 7%;
+}
+.noevents {
+  pointer-events: none;
+}
+.allevents {
+  pointer-events: all;
+}
+#sleepIcon_h {
+  transform: rotate(var(--offsetDeg));
+}
+.sleepIconImg {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("/public/images/slumber-white.png") no-repeat center center;
+  background-size: contain;
+}
+#reportIcon_h {
+  transform: rotate(calc(var(--offsetDeg) - 60deg));
+}
+.reportIconImg {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("/public/images/chart_logo.png") no-repeat center center;
+  background-size: contain;
+}
+#logIcon_h {
+  transform: rotate(calc(var(--offsetDeg) - 120deg));
+}
+.logIconImg_h {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("/public/images/excercise.png") no-repeat center center;
+  background-size: contain;
+}
+#mindIcon_h {
+  transform: rotate(calc(var(--offsetDeg) - 180deg));
+}
+.mindIconImg_h {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("/public/images/yoga.png") no-repeat center center;
+  background-size: contain;
+}
+#perIcon {
+  transform: rotate(calc(var(--offsetDeg) - 240deg));
+}
+.perIconImg {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("/public/images/skills.png") no-repeat center center;
+  background-size: contain;
+}
+#bedIcon {
+  transform: rotate(calc(var(--offsetDeg) - 300deg));
+}
+.bedIconImg {
+  /*display: block;*/
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("/public/images/checklist_high.png") no-repeat center center;
+  background-size: contain;
+}
+
+.circleview {
+  overflow: hidden;
+  padding: 0;
+  margin-top: 70px;
+  height: 35vh;
+}
+
+.circle {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.circle li {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 5%;
+  height: 5vw;
+  max-height: 40%;
+  transform-origin: 0% 100%;
+}
+.circle li:nth-child(1) {
+  transform: rotate(calc(0deg - var(--offsetDeg)));
+}
+.circle li:nth-child(2) {
+  transform: rotate(calc(60deg - var(--offsetDeg)));
+}
+.circle li:nth-child(3) {
+  transform: rotate(calc(120deg - var(--offsetDeg)));
+}
+.circle li:nth-child(4) {
+  transform: rotate(calc(180deg - var(--offsetDeg)));
+}
+.circle li:nth-child(5) {
+  transform: rotate(calc(240deg - var(--offsetDeg)));
+}
+.circle li:nth-child(6) {
+  transform: rotate(calc(300deg - var(--offsetDeg)));
+}
+
+#dailyInfo {
+  height: 70vh;
+  width: 75%;
+  background: var(--iconColor);
+  border-radius: 15%;
+  display: flex;
+  margin-top: 130px;
+  flex-direction: column;
+}
+
+.flip-card {
+  background-color: transparent;
+  /*width: var(--iconsize);*/
+  /*height: var(--iconsize);*/
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .text {
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  opacity: 1;
+  transition: opacity 1s linear;
+  /*-webkit-transition-delay: 0.4s;*/
+  /*-moz-transition-delay: 0.4s;*/
+  /*-o-transition-delay: 0.4s;*/
+  /*transition-delay: 0.4s;*/
+}
+.flip-card:hover .flip-card-front {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  /*-webkit-transition-delay: 0.4s;*/
+  /*-moz-transition-delay: 0.4s;*/
+  /*-o-transition-delay: 0.4s;*/
+  /*transition-delay: 0.4s;*/
+}
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*backface-visibility: hidden;*/
+}
+.flip-card-front {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: transparent;
+  transform: rotateY(180deg);
+}
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+#setting_link {
+  height: 103px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#fefefe, #dadaea);
+}
+
+#setting_icon {
+  background: url("/public/images/setting.svg") no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+#logout_icon {
+  background: url("/public/images/logout_icon.svg") no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.whiteText {
+  color: white;
+  margin-bottom: 15px;
+}
+.profile_pic {
+  border-radius: 50%;
+  width: 75px;
+  margin-left: 10px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.carousel-control-next {
+  margin-right: -5px;
+}
+
+.carousel-control-prev {
+  margin-left: -5px;
+}
+
+.carousel-inner {
+  width: 70%;
+  margin-left: 16.2%;
+}
+
+.carousel-inner h2 {
+  font-size: 25px !important;
+}
+
+.carousel-inner h3,
+h4,
+h5 {
+  font-size: 18px !important;
+}
