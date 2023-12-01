@@ -15,13 +15,14 @@
   margin: 12px 0;
 }
 
+.title {
+  display: flex;
+  gap: 5px;
+}
+
 .h1 {
   font-size: 16px;
   font-weight: bold;
-  color: #337ab7;
-}
-
-.settingsIcon {
   color: #337ab7;
 }
 
@@ -43,11 +44,11 @@
   width: 180px;
   background: #337ab7;
   border: 2px solid #337ab7;
-  border-radius: 100px;
+  border-radius: 4px;
   color: #ffffff !important;
-  font-size: 12px;
+  font-size: 8px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 10px 0;
   margin-bottom: 12px !important;

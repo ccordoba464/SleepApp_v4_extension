@@ -2,22 +2,39 @@ import "./App.css";
 import { CircleList, CircleView } from "./App.styles.jsx";
 import HomeIcon from "./components/HomeIcon";
 import settings from "../public/icons/gear-solid.svg";
+import cloud from "../public/icons/cloud-solid.svg";
+
+import Slider from "@mui/material/Slider";
 
 function App() {
   return (
     <>
       <div className="extensionContainer">
         <header className="header">
-          <h1 className="h1">Z³-Wellness</h1>
-          <img src={settings} alt="" className="settingsIcon" />
+          <div className="title">
+            <img src={cloud} alt="" className="headerIcon" />
+            <h1 className="h1">Z³-Wellness</h1>
+          </div>
+          <img src={settings} alt="" className="headerIcon" />
         </header>
+
+        <div className="btnContainer">
+          <button className="btn">Dashboard</button>
+          <button className="btn">Log Stats</button>
+          <button className="btn">Routine</button>
+        </div>
 
         <div className="dashboard"></div>
 
-        <div className="btnContainer">
-          <button className="btn">GOING TO SLEEP</button>
-          <button className="btn">GOING TO SLEEP</button>
-        </div>
+        <Slider
+          size="small"
+          defaultValue={50}
+          aria-label="Small"
+          valueLabelDisplay="auto"
+          step={15}
+          min={0}
+          max={180}
+        />
 
         {/* <div className="logBtnContainer">
           <div className="logBtn">
