@@ -20,18 +20,14 @@
   gap: 5px;
 }
 
+.headerIcon {
+  cursor: pointer;
+}
+
 .h1 {
   font-size: 16px;
   font-weight: bold;
   color: #337ab7;
-}
-
-.dashboard {
-  background-color: rgba(83, 139, 189, 0.318);
-  /* background-color: rgb(177, 156, 220); */
-  height: 200px;
-  border-radius: 6px;
-  margin-bottom: 12px;
 }
 
 .btnContainer {
@@ -41,7 +37,7 @@
 }
 
 .btn {
-  width: 180px;
+  flex: 1;
   background: #337ab7;
   border: 2px solid #337ab7;
   border-radius: 4px;

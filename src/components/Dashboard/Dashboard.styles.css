@@ -1,0 +1,70 @@
+.dashboard {
+  display: flex;
+  background-color: rgba(93, 156, 211, 0.457);
+  /* background-color: rgb(177, 156, 220); */
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 20px 24px;
+  justify-content: space-between;
+}
+
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  gap: 10px;
+}
+
+.progressDescription {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #337ab7;
+}
+
+.logBtn {
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  border-radius: 4px;
+  color: #ffffff !important;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 12px !important;
+  cursor: pointer;
+  color: rgb(222, 232, 246);
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.avgGrid {
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.avgSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  gap: 4px;
+  color: #337ab7;
+}
+
+.avgValue {
+  color: #6c40a5;
+  font-size: 16px;
+}

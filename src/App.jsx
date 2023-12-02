@@ -3,6 +3,7 @@ import { CircleList, CircleView } from "./App.styles.jsx";
 import HomeIcon from "./components/HomeIcon";
 import settings from "../public/icons/gear-solid.svg";
 import cloud from "../public/icons/cloud-solid.svg";
+import Dashboard from "./components/Dashboard/Dashboard.jsx";
 
 import Slider from "@mui/material/Slider";
 
@@ -24,7 +25,7 @@ function App() {
           <button className="btn">Routine</button>
         </div>
 
-        <div className="dashboard"></div>
+        <Dashboard />
 
         <Slider
           size="small"
