@@ -1,4 +1,4 @@
-.dashboard {
+.container {
   display: flex;
   background-color: rgba(93, 156, 211, 0.457);
   /* background-color: rgb(177, 156, 220); */
@@ -67,4 +67,57 @@
 .avgValue {
   color: #6c40a5;
   font-size: 16px;
+}
+
+.logContainer {
+  display: flex;
+  background-color: rgba(93, 156, 211, 0.457);
+  /* background-color: rgb(177, 156, 220); */
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logText {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.title {
+  color: #337ab7;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.desc {
+  color: #6c40a5;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.trackBtn {
+  width: 110px;
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  border-radius: 4px;
+  color: #ffffff !important;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
 }

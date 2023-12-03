@@ -1,42 +1,31 @@
 import "./App.css";
-import { CircleList, CircleView } from "./App.styles.jsx";
-import HomeIcon from "./components/HomeIcon";
 import settings from "../public/icons/gear-solid.svg";
 import cloud from "../public/icons/cloud-solid.svg";
-import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import { Routes, Route, Link } from "react-router-dom";
 
-import Slider from "@mui/material/Slider";
+import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import Settings from "./components/Settings/Settings.jsx";
 
 function App() {
   return (
     <>
       <div className="extensionContainer">
         <header className="header">
-          <div className="title">
+          <Link to="/" className="websiteTitle">
             <img src={cloud} alt="" className="headerIcon" />
             <h1 className="h1">Z³-Wellness</h1>
-          </div>
-          <img src={settings} alt="" className="headerIcon" />
+          </Link>
+
+          <Link to="/settings">
+            <img src={settings} alt="" className="headerIcon" />
+          </Link>
         </header>
 
-        <div className="btnContainer">
-          <button className="btn">Dashboard</button>
-          <button className="btn">Log Stats</button>
-          <button className="btn">Routine</button>
-        </div>
-
-        <Dashboard />
-
-        <Slider
-          size="small"
-          defaultValue={50}
-          aria-label="Small"
-          valueLabelDisplay="auto"
-          step={15}
-          min={0}
-          max={180}
-        />
-
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route />
+        </Routes>
         {/* <div className="logBtnContainer">
           <div className="logBtn">
             <h2 className="h2">Going to sleep?</h2>
@@ -56,7 +45,6 @@ function App() {
             ></input>
           </div>
         </div> */}
-
         {/* <div className="circleMenu">
           <CircleView>
             <CircleList>

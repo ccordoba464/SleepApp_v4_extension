@@ -1,0 +1,41 @@
+.settingsBtn {
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  border-radius: 4px;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-bottom: 12px !important;
+  cursor: pointer;
+  text-align: center;
+}
+
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(93, 156, 211, 0.457);
+  /* background-color: rgb(177, 156, 220); */
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 20px 24px;
+  justify-content: space-between;
+}
+
+.settingsContainer .section {
+  display: flex;
+  width: 100%;
+  color: #337ab7;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-bottom: 1px solid #337ab7;
+}
+
+.section .title {
+  width: 100%;
+  padding: 4px 0;
+  font-size: 14px;
+}
